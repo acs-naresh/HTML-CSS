@@ -1,0 +1,135 @@
+body {
+    margin: 0;
+    padding: 0;
+    border: 0;
+  }
+
+.flex-container{
+    position: fixed;
+    width: 100%;
+    display: flex;
+    height: 100%;
+    flex-wrap: nowrap;
+    background-color: white;
+    align-items: center;
+    position: relative;
+     
+}
+
+.flex-container .box-1 {  
+  position: relative;
+  width: 50%;
+  line-height: 100%;
+  text-align: center;
+   
+  position: relative;
+
+  }
+  .flex-container .box-2{
+    color: white;
+    background-position: initial;
+    width: 50%;
+    line-height: 100%;
+    text-align: center;
+   
+    background-image: linear-gradient(to bottom left, rgb(132, 22, 156), rgb(126, 74, 228));
+  /* margin: auto; */
+
+}
+ 
+
+.flex-container .box-1 .login-content{   
+  
+  margin: auto;
+  color: rgb(118, 87, 181);
+  font-family:  'Calibri Light',sans-serif;
+  /* top: 400%; */
+  width: 100%;
+  text-align: center;
+  font-size: 18px;
+
+ } 
+ .flex-container .box-1 .login-content .login-form{
+  position: relative;
+  margin: auto;
+ }
+ 
+.flex-container .box-1 .login-content h1{ 
+  padding: 20px;
+  font-size: 1cm;
+  
+ } 
+ .flex-container .box-1 .login-content i{ 
+  position: absolute;
+  margin: 5px;
+  font-size: 0.5cm;
+
+ } 
+ 
+ .flex-container .box-1 .login-content .p4 { 
+  padding-top: 0.5cm;
+ 
+} 
+.flex-container .box-1 .login-content .p4 a{ 
+  margin: auto;
+  padding-top: 1cm;
+  padding-right: 2.5cm;
+  font-size: 0.5cm;
+ 
+} 
+
+.flex-container .box-1 .login-content input { 
+   padding-left: 35px;
+   width: 50%;
+   /* text-align: center; */
+ }
+ 
+.flex-container .box-1 .forgotPassword{
+     
+     text-decoration: none;
+     color: rgb(118, 87, 181);
+
+ }
+  .flex-container .box-1 .signin{
+     
+    color: white;
+    background-color: #3dbec9;
+    border-radius: 50px;
+    border: none;
+    width: 4cm;
+    height: 1cm;
+    
+
+ }
+ 
+input{
+    
+    border-top: none;
+    border-left: none; 
+    border-right: none; 
+  }
+
+.flex-container .box-2 .wrapper{
+
+    margin-top: 20% ;
+    text-transform: uppercase;
+    font-family: 'Calibri';
+}
+.flex-container .box-2 .text{
+    margin-top: 50px; 
+}
+.flex-container .box-2 .footer{
+    font-size: small;
+    margin-top: 200px ;
+}
+.flex-container .box-2 .footer span{
+
+    margin: 50px;
+    font-size: 30px; 
+}
+
+
+
+.flex-container .box-2 .wrapper h4{
+    margin: 50px;
+}

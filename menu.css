@@ -1,0 +1,125 @@
+body{
+    margin: 0;
+    border: 0;
+    padding: 0;
+}
+.side-nav{
+    width: 260px;
+    height: 100%;
+    flex-direction: row;
+    display: flex;
+    flex-wrap: nowrap;  
+    align-items: flex-start;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    overflow-x: hidden;
+  }
+
+.side-nav .side-nav-1 {
+    display: flex;
+    flex-direction: column;
+    width: 1.5cm;
+    height: 100%;
+    background-color: rgb(79, 79, 205);     
+}
+.side-nav .side-nav-2 {
+    display: flex;
+    flex-direction: column;
+    width: 6cm;
+    height: 100%;
+    background-color: rgb(20, 10, 158); 
+    border-top-right-radius: 30px;   
+}
+
+ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+.side-nav .side-nav-1  li {
+    width: 100%;
+    text-decoration: none; 
+    font-size: 1.5em;
+    margin-bottom:30px ;
+    border-bottom-right-radius: 50%;
+    border-top-right-radius: 50%;
+     
+ }
+
+.side-nav .side-nav-2 li{
+    text-decoration: none;
+    color: white;
+    width: 100%;
+    font-size: 1em;
+    padding-top: 0.5cm;
+    padding-bottom: 0.5cm;
+    padding-left: 0.5cm;
+    border-bottom-left-radius: 25px;
+    border-top-left-radius: 25px;
+ }
+ .side-nav .side-nav-1 li a {
+
+    text-decoration: none;
+    padding-top: 0.5cm;
+    padding-bottom: 0.5cm;
+    color: white;
+    height: 2cm; 
+    width: 100%;
+    font-size: 1.5em;
+    border-bottom-right-radius: 50%;
+    border-top-right-radius: 50%;
+     
+ }
+
+ .side-nav .side-nav-2 li a{
+    text-decoration: none;
+    color: white;
+    /* width:cm; */
+    font-size: 1.3em;
+    padding-top: 0.3cm;
+    padding-bottom: 0.3cm;
+    padding-left: 0.3cm;
+    padding: 0.3cm 100% 0.3cm 0.3cm;
+
+    border-bottom-left-radius: 25px;
+    border-top-left-radius: 25px;
+ }
+
+ .side-nav .side-nav-2 > li > a span{
+     padding-right: 10px;
+ }
+
+ 
+.side-nav .side-nav-2 > li .sigout{
+     margin-top: 20px;
+ }
+
+.side-nav .side-nav-2 > li h3{
+    text-align: center;
+    text-decoration: none;
+    color: white;
+    margin-bottom: 30px;
+    height: 1.5cm; 
+    padding-right: 2cm;
+    padding-left: 1cm;
+    width: 100%;
+ }
+
+
+
+.side-nav .side-nav-1 > li a:hover{
+     
+    /* padding-right: 100%; */
+    background-color: white;
+    color: blue;
+
+}
+
+.side-nav .side-nav-2 > li a:hover{
+    background-color: white;
+    color: blue;
+
+}
+
+
