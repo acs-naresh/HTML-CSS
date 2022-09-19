@@ -1,0 +1,265 @@
+body{
+    margin: 0;
+    padding: 0;
+    border: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: gray;
+}
+header{
+    position: relative;
+    top: 2px;
+    width: 100%;
+    height: 77px;
+}
+header .logo-bar{
+    left: 0;
+    width: 100%;
+    height: 45px;  
+    background-color: rgb(247, 184, 49);
+}
+header .logo-bar > ul{
+    list-style-type: none;
+}
+ 
+header .logo-bar .website{
+    top: 0;
+    width: 30%;
+    height: 100%;
+    display: flex;
+    justify-content: center;  
+    align-items: center;   
+}
+
+header .logo-bar .website .logo{ 
+    display: flex;
+    position: relative;
+}
+
+header .logo-bar .logo .triangle-down{
+        width: 0;
+        height: 0;
+        z-index: 2;
+        border-left: 12px solid transparent;
+        border-right: 12px solid transparent;
+        border-top: 12px solid white;
+}
+
+header .logo-bar .logo .triangle-middle{
+    position: absolute;
+    width: 0;  
+    height: 0;
+    top: 0;
+    left: 0;
+    margin: 8px 0 0 12px;
+}
+header .logo-bar .logo .triangle-middle .triangle{
+    border-left: 12px solid transparent;
+    border-right: 12px solid transparent;
+    border-top: 12px solid white;  
+}
+header .logo-bar .logo .triangle-middle .rectangle{
+    position: absolute;
+    z-index: 1;
+    height: 2px;
+    width: 24px;
+    background-color:gray;
+}
+header .logo-bar .website .site-name{
+    font-size: 30px;
+    font-weight: bold;
+    color: gray;
+    margin-left: 5%;
+}
+
+
+header .logo-bar .social-media{
+    height: 45px; 
+    position: absolute;
+    top: -16px;
+    right: 0;
+    width: 30%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+header .logo-bar .social-media li{
+    padding:  0 2%;
+    font-size: 30px;
+}
+header .logo-bar .social-media li a{
+    color: gray;
+}
+header .logo-bar .social-media li a:hover{
+    color: white;
+}
+
+
+header .nav-bar{
+    display: flex;
+    align-items: center;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 30px;
+    justify-content: center;
+    background-color: #e7dbcf;
+
+}
+
+header .nav-bar ul{
+    width: 90%;
+    height: 100%;
+    align-items: center;
+    display: flex; 
+    list-style-type: none;
+    font-weight: bold;
+    font-family:  sans-serif;
+    font-size: 13px;
+}
+
+header .nav-bar ul li a{
+    text-decoration: none; 
+    color: rgb(102, 97, 97);
+}
+ 
+header .nav-bar ul .empty-list{
+    flex-grow:1;
+ 
+}
+
+header .nav-bar ul span{
+     color: rgb(157, 152, 152);
+    margin:0 1%;
+}
+
+
+.image{
+    width: 100%;
+    height: 30%;
+    background-image: linear-gradient(to top right, rgba(255,255,255,0.2) 50%,rgba(0,0,0,0) 50% ), url('site-bg.png');
+    background-size: 100% 100%;
+}
+ 
+.body{
+    background-color:#e7dbcf;
+    height: 560px;
+}
+.body .box-container{
+    margin: auto;
+    margin-top: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    min-width: 500px;
+    max-width: 1200px;
+    height: 65%;
+    background-color:  rgb(241 238 234);
+    box-shadow: 2px 6px 5px 2px grey;
+
+}
+
+.body .box-container .box{
+     
+    width: 250px ;
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+}
+ 
+.body .box-container .box .icon{
+    margin: auto;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background-color: orange;
+    
+}
+.body .box-container .box .icon i{
+    
+    color: white;
+    font-size: 30px;
+    margin-top: 15px;
+
+}
+ 
+.body .box-container .box .title{
+     
+    width: 100%;
+    height: 10%;  
+}
+ 
+.body .box-container .box .text{
+    margin-top: 3%;
+    width: 100%;
+    height: 50%;  
+}
+  
+.body .box-container .box .button{
+    width: 100%;
+    height: 20%;  
+}
+ 
+.body .box-container .box .button input{
+    height: 80%;
+    background-color:#f8e8d6;
+    border: 3px solid orange ;
+    color: orange;  
+    font-weight: bold;  
+
+}
+
+
+footer .nav-bar{
+    display: flex;
+    align-items: center;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 30px; 
+    
+}
+
+footer .nav-bar ul{
+    color: white;
+    width: 100%;
+    height: 100%;
+    align-items: center;
+    display: flex; 
+    justify-content: center;
+    list-style-type: none;
+    background-color: rgb(103, 101, 101);
+    font-family:  sans-serif;
+    font-size: 13px;
+}
+
+footer .nav-bar ul li a{
+    color: white;
+    text-decoration: none; 
+}
+
+footer .nav-bar ul span{
+     
+    margin:0 1%;
+}
+
+footer .footer-content{
+    
+    color: white;
+   text-align: center;
+}
+footer .footer-content p span{
+    font-weight: bold;
+    margin: 0 1% ;
+    width: 2px;
+}
+
+
+
+
+
+
+ 

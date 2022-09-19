@@ -2,115 +2,107 @@ body{
     margin: 0;
     border: 0;
     padding: 0;
+    width: 100vw;
+    height: 100vh;
 }
+/* .container{
+    margin: 0;
+    border: 0;
+    padding: 0;
+    width: 18%;
+    height: 100%;
+    display: flex;
+    background-color: aqua;
+} */
 .side-nav{
-    width: 260px;
+    
     height: 100%;
     flex-direction: row;
     display: flex;
-    flex-wrap: nowrap;  
+    flex-wrap: wrap;  
     align-items: flex-start;
     z-index: 1;
     top: 0;
     left: 0;
     overflow-x: hidden;
-  }
+    
+  } 
 
 .side-nav .side-nav-1 {
-    display: flex;
-    flex-direction: column;
-    width: 1.5cm;
-    height: 100%;
-    background-color: rgb(79, 79, 205);     
+    width: 80px;
+    min-height: 100%;
+    background-color: rgb(47, 47, 167);     
 }
 .side-nav .side-nav-2 {
-    display: flex;
-    flex-direction: column;
-    width: 6cm;
-    height: 100%;
+    width: 200px;
+    min-height: 100%;
     background-color: rgb(20, 10, 158); 
     border-top-right-radius: 30px;   
 }
-
+  
 ul{
     list-style-type: none;
     margin: 0;
     padding: 0;
 }
-.side-nav .side-nav-1  li {
+.side-nav .side-nav-1 > li {
     width: 100%;
-    text-decoration: none; 
-    font-size: 1.5em;
-    margin-bottom:30px ;
-    border-bottom-right-radius: 50%;
-    border-top-right-radius: 50%;
+    height: 40px;
+    margin: 30px 0;
      
- }
+}
 
-.side-nav .side-nav-2 li{
+.side-nav .side-nav-2 > li{
+     width: 100%;
+     height: 50px;   
+     position: relative;
+     align-items: center;
+} 
+
+ .side-nav .side-nav-1 > li a {
+
+    position: relative;
+    text-align: center;
+    display: block;
+    padding: 10px 5px ;
     text-decoration: none;
     color: white;
-    width: 100%;
-    font-size: 1em;
-    padding-top: 0.5cm;
-    padding-bottom: 0.5cm;
-    padding-left: 0.5cm;
+    width: 80px;
+    font-size: 40px; 
+    border-bottom-right-radius: 25px ;
+    border-top-right-radius: 25px;  
+ }
+
+ .side-nav .side-nav-2 > li a{
+    display: block;
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+    width: 200px;
+    padding: 10px 0px 10px 30px;
     border-bottom-left-radius: 25px;
     border-top-left-radius: 25px;
- }
- .side-nav .side-nav-1 li a {
+  }
 
-    text-decoration: none;
-    padding-top: 0.5cm;
-    padding-bottom: 0.5cm;
-    color: white;
-    height: 2cm; 
-    width: 100%;
-    font-size: 1.5em;
-    border-bottom-right-radius: 50%;
-    border-top-right-radius: 50%;
-     
- }
+#signout{
+     margin: 20% 0;
+}
 
- .side-nav .side-nav-2 li a{
-    text-decoration: none;
-    color: white;
-    /* width:cm; */
-    font-size: 1.3em;
-    padding-top: 0.3cm;
-    padding-bottom: 0.3cm;
-    padding-left: 0.3cm;
-    padding: 0.3cm 100% 0.3cm 0.3cm;
-
-    border-bottom-left-radius: 25px;
-    border-top-left-radius: 25px;
- }
-
- .side-nav .side-nav-2 > li > a span{
+.side-nav .side-nav-2 > li a span{
      padding-right: 10px;
  }
 
- 
-.side-nav .side-nav-2 > li .sigout{
-     margin-top: 20px;
- }
+.side-nav .side-nav-2 .logo-head{
 
-.side-nav .side-nav-2 > li h3{
-    text-align: center;
-    text-decoration: none;
+    margin: 20px 30px;
     color: white;
-    margin-bottom: 30px;
-    height: 1.5cm; 
-    padding-right: 2cm;
-    padding-left: 1cm;
-    width: 100%;
- }
+    text-transform: uppercase;
 
-
+}
+ 
 
 .side-nav .side-nav-1 > li a:hover{
-     
-    /* padding-right: 100%; */
+    
     background-color: white;
     color: blue;
 
@@ -119,7 +111,111 @@ ul{
 .side-nav .side-nav-2 > li a:hover{
     background-color: white;
     color: blue;
+} 
 
+
+/* Curves for side-nav-1 */
+    
+.side-nav .side-nav-1 > li a:hover:before,
+.side-nav .side-nav-1 > li a:hover:after
+ {
+        content:"";
+        position: absolute;
+        width: 20px; 
+        height: 20px;
+        background-color: brown;
+        left: 0px;
+}
+
+.side-nav .side-nav-1 > li a:hover:before{
+    top: -20px;
+    background: radial-gradient(circle at top right,rgb(47, 47, 167)  20px,white 20px);
+} 
+ 
+.side-nav .side-nav-1 > li a:hover:after{
+    bottom: -20px;
+    background: radial-gradient(circle at bottom right,rgb(47, 47, 167)  20px,white 20px);
+} 
+
+
+
+/* Curves for side-nav-2 */
+
+.side-nav .side-nav-2 > li a:hover:after,
+.side-nav .side-nav-2 > li a:hover:before{
+        content:"";
+        position: absolute;
+        width: 30px; 
+        height: 30px;
+        right: 0px;
+        background-color: black;
 }
 
 
+.side-nav .side-nav-2 > li a:hover:after{
+    top: -30px;
+    background: radial-gradient(circle at top left, rgb(20, 10, 158)  30px,white 30px);
+}
+ 
+
+.side-nav .side-nav-2 > li a:hover:before{
+    bottom: -30px;
+    background: radial-gradient(circle at bottom left, rgb(20, 10, 158)  30px,white 30px);
+    }
+
+ 
+
+
+
+     
+
+
+
+
+
+
+
+
+
+
+
+
+ .circle {
+    margin-top: 100px;
+    width: 100px;
+    height: 100px;
+    background-color: rgb(127, 255, 131); 
+   
+} 
+.circle div{
+    position: relative;
+    width: 100px;
+    height: 100px;
+}
+.circle div:hover{
+    width: 100px;
+    height: 100px;
+    background-color: blueviolet;
+}
+
+.circle div:hover:before,
+.circle div:hover:after{
+    content: "";
+    position: absolute;
+    height: 20px;
+    width: 20px;
+    background-color: blue;
+
+} 
+
+
+.circle div:hover:before{ 
+    top: -20px;
+    background: radial-gradient(circle at top right, white  20px,blueviolet 20px);
+}
+
+
+.circle div:hover:after{
+    bottom: -20px;
+    background: radial-gradient(circle at bottom right, white  20px,blueviolet 20px);
+}

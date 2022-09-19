@@ -1,0 +1,59 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+    <style>
+        .menu{
+        list-style-type: none;
+        background: blue;
+        width: 200px;
+        border-radius: 20px;
+        padding: 30px 0 30px 30px;
+        }
+
+        .menu li{
+        position: relative;
+        padding: 5px;
+        border-radius: 10px 0 0 10px;
+        }
+
+        .menu li:hover{
+        background: white; 
+        }
+
+        .menu li:hover:after,
+        .menu li:hover:before{
+        content:'';
+        position: absolute;
+        width: 10px; 
+        height: 10px;
+        background-color: brown;
+        right: 0px;
+        }
+
+        /* .menu li:hover:after{
+        top: -10px;
+        background: radial-gradient(circle at top left, rgb(216, 216, 227) 10px, rgb(230, 99, 99) 11px);
+        }
+
+        .menu li:hover:before{
+        bottom: -10px;
+        background: radial-gradient(circle at bottom left, blue 10px, rgb(112, 194, 35) 11px);
+        } */
+    </style>
+</head>
+<body>
+    
+    Hover over menu items to see the effect
+<ul class="menu">
+  <li>one</li>
+  <li>two</li>
+  <li>three</li>
+  <li>four</li>
+  <li>five</li>
+</ul>
+</body>
+</html>
