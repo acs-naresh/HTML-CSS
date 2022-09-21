@@ -4,12 +4,14 @@ body{
     border: 0;
     width: 100vw;
     height: 100vh;
+    min-width: 600px;
     background-color: gray;
 }
 header{
     position: relative;
     top: 2px;
-    width: 100%;
+    min-width: 600px;
+    max-width: 1600px;
     height: 77px;
 }
 header .logo-bar{
@@ -152,7 +154,7 @@ header .nav-bar ul span{
     display: flex;
     align-items: center;
     justify-content: space-around;
-    min-width: 500px;
+    min-width: 600px;
     max-width: 1200px;
     height: 65%;
     background-color:  rgb(241 238 234);
@@ -251,10 +253,22 @@ footer .footer-content{
     color: white;
    text-align: center;
 }
-footer .footer-content p span{
+footer .footer-content .terms span{
     font-weight: bold;
+    font-size: 20px;
     margin: 0 1% ;
-    width: 2px;
+    
+}
+
+footer .footer-content .rights span{
+    margin: 0 1% ;
+    height: 3px;
+    width: 3px;
+    background-color: white;
+    border-radius: 50%;
+    margin-bottom: 3px;
+    display: inline-block;
+    
 }
 
 
